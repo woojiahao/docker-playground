@@ -15,6 +15,8 @@ EXPOSE 80
 
 # Define environment variable
 ENV NAME World 
+ENV http_proxy 0.0.0.0:80
+ENV https_proxy 0.0.0.0:80
 
 # Run app.py when the container launches 
 CMD ["python", "app.py"]

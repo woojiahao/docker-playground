@@ -1,4 +1,7 @@
 # Docker
+The core concept of Docker is build once, run everywhere - once an image is created and uploaded to the remote repository, the image can be run and the instructions will be processed accordingly. 
+
+This is incredibly useful since it means that the environment does not need to be set up multiple times to run.
 
 ## Cheatsheet
 List Docker CLI commands
@@ -43,7 +46,7 @@ docker run -p 4000:80 friendlyhello
 
 Run "friendlyhello" mapping port 4000 to 80 in detached mode
 ```bash
-docker run -pd 4000:80 friendlyhello 
+docker run -d -p 4000:80 friendlyhello 
 ```
 
 Gracefully stop the specified container

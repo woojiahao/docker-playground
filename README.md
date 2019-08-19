@@ -103,3 +103,43 @@ Run image from registry
 ```bash
 docker run username/repository:tag
 ```
+
+List stacks or apps
+```bash
+docker stack ls
+```
+
+Run the specified Compose file
+```bash
+docker stack deploy -c <composefile> <appname>
+```
+
+List running services associated with an app
+```bash
+docker service ls
+```
+
+List tasks associated with an app
+```bash
+docker service ps <service>
+```
+
+Inspect task or container
+```bash
+docker inspect <task or container>
+```
+
+List container IDs
+```bash
+docker container ls -q
+```
+
+Tear down an application
+```bash
+docker stack rm <appname>
+```
+
+Take down a single node swarm from the image
+```bash
+docker swarm leave --force
+```
